@@ -1,0 +1,18 @@
+Extract data for reporting in jmeter
+============================================
+Dear, 
+
+I’ve completed performance test on frequently used API for test App. 
+Test executed for the below mentioned scenario in server 000.000.000.00. 
+
+200 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 10 ; Total Concurrent API requested: 600 And Error Rate 0%.
+500 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 25 ; Total Concurrent API requested: 1500 And Error Rate 0%.
+1000 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 50 ; Total Concurrent API requested: 3000 And Error Rate 0%.
+1500 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 75 ; Total Concurrent API requested: 4500 And Error Rate 0%.
+1560 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 78 ; Total Concurrent API requested: 4680 And Error Rate 0.13%.
+1575 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 77 ; Total Concurrent API requested: 4725 And Error Rate 1.71%
+
+
+While executed 1560 concurrent request, found  4680 request got connection timeout and error rate is 0.13%. 
+
+Summary: Server can handle almost concurrent 1550 API call with almost zero (0) error rate.
